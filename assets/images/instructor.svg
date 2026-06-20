@@ -1,0 +1,123 @@
+<svg viewBox="0 0 460 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#160900"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="og" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6A00"/>
+      <stop offset="100%" stop-color="#FAA429"/>
+    </linearGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#C8874A"/>
+      <stop offset="100%" stop-color="#8B5C30"/>
+    </radialGradient>
+    <radialGradient id="glowBot" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#FF6A00" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF6A00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- BG -->
+  <rect width="460" height="560" fill="url(#bg)"/>
+  <rect width="460" height="560" fill="url(#glowBot)"/>
+
+  <!-- Grid -->
+  <g stroke="#FF6A00" stroke-width="0.4" opacity="0.07">
+    <line x1="0" y1="45" x2="460" y2="45"/><line x1="0" y1="90" x2="460" y2="90"/>
+    <line x1="0" y1="135" x2="460" y2="135"/><line x1="0" y1="180" x2="460" y2="180"/>
+    <line x1="0" y1="225" x2="460" y2="225"/><line x1="0" y1="270" x2="460" y2="270"/>
+    <line x1="0" y1="315" x2="460" y2="315"/><line x1="0" y1="360" x2="460" y2="360"/>
+    <line x1="0" y1="405" x2="460" y2="405"/><line x1="0" y1="450" x2="460" y2="450"/>
+    <line x1="45" y1="0" x2="45" y2="560"/><line x1="90" y1="0" x2="90" y2="560"/>
+    <line x1="135" y1="0" x2="135" y2="560"/><line x1="180" y1="0" x2="180" y2="560"/>
+    <line x1="225" y1="0" x2="225" y2="560"/><line x1="270" y1="0" x2="270" y2="560"/>
+    <line x1="315" y1="0" x2="315" y2="560"/><line x1="360" y1="0" x2="360" y2="560"/>
+    <line x1="405" y1="0" x2="405" y2="560"/>
+  </g>
+
+  <!-- Glow ring behind head -->
+  <circle cx="230" cy="220" r="130" fill="#FF6A00" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="230" cy="220" r="112" fill="none" stroke="url(#og)" stroke-width="2" opacity="0.4"/>
+  <circle cx="230" cy="220" r="125" fill="none" stroke="#FF6A00" stroke-width="1" opacity="0.15" stroke-dasharray="6 5"/>
+
+  <!-- Body (suit jacket) -->
+  <path d="M60 560 L85 390 Q130 350 185 335 L230 360 L275 335 Q330 350 375 390 L400 560Z" fill="#101010"/>
+  <!-- Jacket lapels -->
+  <path d="M185 335 L210 380 L230 360 L250 380 L275 335 Q260 370 230 375 Q200 370 185 335Z" fill="#1a1a1a"/>
+  <!-- Shirt/tie detail -->
+  <path d="M222 338 L230 375 L238 338 L230 350Z" fill="url(#og)" opacity="0.9"/>
+  <!-- Collar whites -->
+  <path d="M208 335 L222 355 L230 350 L238 355 L252 335 Q240 345 230 348 Q220 345 208 335Z" fill="#2a2a2a"/>
+
+  <!-- Neck -->
+  <rect x="210" y="295" width="40" height="50" rx="10" fill="#A0714A"/>
+
+  <!-- Shoulders -->
+  <ellipse cx="230" cy="375" rx="130" ry="45" fill="#0d0d0d"/>
+
+  <!-- Head -->
+  <ellipse cx="230" cy="250" rx="80" ry="90" fill="url(#faceGrad)"/>
+
+  <!-- Hair -->
+  <path d="M150 235 Q148 195 160 175 Q175 150 200 145 Q215 140 230 139 Q245 140 260 145 Q285 150 300 175 Q312 195 310 235 Q305 215 295 205 Q278 195 260 198 Q245 200 230 200 Q215 200 200 198 Q182 195 165 205 Q155 215 150 235Z" fill="#1a0d04"/>
+  <!-- Hair sides -->
+  <path d="M150 235 Q152 250 155 260 Q162 245 165 230 Q162 215 165 205 Q155 215 150 235Z" fill="#1a0d04"/>
+  <path d="M310 235 Q308 250 305 260 Q298 245 295 230 Q298 215 295 205 Q305 215 310 235Z" fill="#1a0d04"/>
+
+  <!-- Ears -->
+  <ellipse cx="152" cy="258" rx="13" ry="17" fill="#A0714A"/>
+  <ellipse cx="308" cy="258" rx="13" ry="17" fill="#A0714A"/>
+  <ellipse cx="153" cy="258" rx="7" ry="11" fill="#8B6040"/>
+  <ellipse cx="307" cy="258" rx="7" ry="11" fill="#8B6040"/>
+
+  <!-- Eyebrows -->
+  <path d="M193 225 Q207 218 220 222" stroke="#3d2008" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M240 222 Q253 218 267 225" stroke="#3d2008" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="207" cy="240" rx="13" ry="11" fill="#1a0d00"/>
+  <ellipse cx="253" cy="240" rx="13" ry="11" fill="#1a0d00"/>
+  <circle cx="207" cy="240" r="8" fill="#2d1a00"/>
+  <circle cx="253" cy="240" r="8" fill="#2d1a00"/>
+  <circle cx="207" cy="240" r="4.5" fill="#0d0700"/>
+  <circle cx="253" cy="240" r="4.5" fill="#0d0700"/>
+  <!-- Eye shine -->
+  <circle cx="210" cy="237" r="2.5" fill="white" opacity="0.7"/>
+  <circle cx="256" cy="237" r="2.5" fill="white" opacity="0.7"/>
+
+  <!-- Nose -->
+  <path d="M224 255 Q220 270 216 276 Q224 281 230 280 Q236 281 244 276 Q240 270 236 255" fill="none" stroke="#8B5C30" stroke-width="1.8" stroke-linecap="round"/>
+  <ellipse cx="222" cy="277" rx="5" ry="3.5" fill="#8B5C30" opacity="0.5"/>
+  <ellipse cx="238" cy="277" rx="5" ry="3.5" fill="#8B5C30" opacity="0.5"/>
+
+  <!-- Mouth -->
+  <path d="M210 295 Q220 302 230 303 Q240 302 250 295" stroke="#5a3520" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M213 295 Q221 299 230 300 Q239 299 247 295" fill="#7a4530" opacity="0.6"/>
+
+  <!-- Light stubble chin -->
+  <ellipse cx="230" cy="305" rx="30" ry="15" fill="#8B5C30" opacity="0.25"/>
+
+  <!-- Bottom label area -->
+  <rect x="0" y="466" width="460" height="94" fill="#0a0000" opacity="0.85"/>
+  <line x1="0" y1="466" x2="460" y2="466" stroke="#FF6A00" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Orange accent dots -->
+  <circle cx="80" cy="488" r="3" fill="#FF6A00" opacity="0.7"/>
+  <circle cx="380" cy="488" r="3" fill="#FF6A00" opacity="0.7"/>
+
+  <!-- Name -->
+  <text x="230" y="498" text-anchor="middle" font-family="Aldrich, Impact, sans-serif" font-size="24" font-weight="700" fill="#ffffff" letter-spacing="3">RODRIGO MATOS</text>
+  <!-- Divider -->
+  <rect x="175" y="506" width="110" height="1.5" rx="1" fill="url(#og)"/>
+  <!-- Title -->
+  <text x="230" y="526" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FF6A00" letter-spacing="2">ESPECIALISTA EM AUTOMAÇÃO COM IA</text>
+
+  <!-- Corner accents -->
+  <path d="M20 20 L50 20 L50 22 L22 22 L22 50 L20 50Z" fill="#FF6A00" opacity="0.5"/>
+  <path d="M440 20 L410 20 L410 22 L438 22 L438 50 L440 50Z" fill="#FF6A00" opacity="0.5"/>
+</svg>
