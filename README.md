@@ -47,8 +47,8 @@ O projeto foi pensado para deploy simples em hospedagens estáticas como Vercel,
 ```text
 .
 ├── index.html
-├── politica-de-privacidade.html
-├── termos-de-uso.html
+├── html/politica-de-privacidade.html
+├── html/termos-de-uso.html
 ├── vercel.json
 ├── jsconfig.json
 └── assets
@@ -63,9 +63,9 @@ O projeto foi pensado para deploy simples em hospedagens estáticas como Vercel,
 Os arquivos críticos usam uma versão de release:
 
 ```html
-assets/css/styles.css?v=20260620-01
-assets/js/main.js?v=20260620-01
-assets/images/logos/preloader.webp?v=20260620-01
+assets/css/styles.css?v=20260620-02
+assets/js/main.js?v=20260620-02
+assets/images/logos/preloader.webp?v=20260620-02
 ```
 
 Isso evita que navegadores, CDN ou hospedagens mantenham versões antigas do preloader, CSS ou JavaScript depois de uma atualização.
